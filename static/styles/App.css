@@ -1,0 +1,39 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  background: ghostwhite;
+  position: relative;
+  flex-grow: 1;
+  height: 1px;
+  min-height: 250px;
+}
+
+.my-switch {
+  border: 1px solid #2f528f;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: background-color 0.5s;
+}
+
+.my-sensor {
+  background: white;
+  color: black;
+  border: 1px solid #2f528f;
+  border-radius: 5px;
+  padding: 1px 3px;
+  text-align: center;
+}
+
+.my-sensor--3 {
+  background: aqua;
+  transform: rotate(19.5deg);
+}
