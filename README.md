@@ -19,7 +19,7 @@ import { Diagram, Switch, Sensor } from 'mini-hmi';
 <Diagram backgroundImage="path/to/background.img" width={1920} height={1080}>
   <Switch className="my-switch" state={false} x={440} y={545} width={10} />
   <Sensor className="my-sensor" value={0.34} x={660} y={320} width={100} height={20} format="0%" />
-</Diagram>;
+</Diagram>
 ```
 
 ## Available components
@@ -60,20 +60,20 @@ Props:
 ### Sensor
 
 Displays numeric values with optional format\
-See [numerable format options](https://github.com/gastonmesseri/numerable#format)
+See `numerable` [formats](https://github.com/gastonmesseri/numerable#1234-formatting-numbers) and [options](https://github.com/gastonmesseri/numerable#format)
 
 Props:
 
-|     Prop      |                                                     Description                                                     |                     Type                      | Required |
-| :-----------: | :-----------------------------------------------------------------------------------------------------------------: | :-------------------------------------------: | :------: |
-|     value     |                                                  State to display                                                   | `number` \| `string` \| `null` \| `undefined` |    ✅    |
-|       x       |                                               X position (in pixels)                                                |                   `number`                    |    ✅    |
-|       y       |                                               Y position (in pixels)                                                |                   `number`                    |    ✅    |
-|     width     |                                                  Width (in pixels)                                                  |                   `number`                    |    ✅    |
-|    height     |                                                 Height (in pixels)                                                  |                   `number`                    |    ❌    |
-|    format     | Format for `value`<br/> See [numerable formats](https://github.com/gastonmesseri/numerable#1234-formatting-numbers) |       `string` \| `null` \| `undefined`       |    ❌    |
-| formatOptions |  Format options for `value`<br/>See [numerable format options](https://github.com/gastonmesseri/numerable#format)   |                   `string`                    |    ❌    |
-|   className   |                                          Custom class name to be attached                                           |                   `string`                    |    ❌    |
+|     Prop      |           Description            |                     Type                      | Required |
+| :-----------: | :------------------------------: | :-------------------------------------------: | :------: |
+|     value     |         State to display         | `number` \| `string` \| `null` \| `undefined` |    ✅    |
+|       x       |      X position (in pixels)      |                   `number`                    |    ✅    |
+|       y       |      Y position (in pixels)      |                   `number`                    |    ✅    |
+|     width     |        Width (in pixels)         |                   `number`                    |    ✅    |
+|    height     |        Height (in pixels)        |                   `number`                    |    ❌    |
+|    format     |        Format for `value`        |       `string` \| `null` \| `undefined`       |    ❌    |
+| formatOptions |    Format options for `value`    |                   `string`                    |    ❌    |
+|   className   | Custom class name to be attached |                   `string`                    |    ❌    |
 
 ## Customization
 
