@@ -42,6 +42,7 @@
     "storybook": "start-storybook -s static -p 6006",
     "build-storybook": "build-storybook -s static",
     "cm": "cz",
+    "release": "semantic-release",
     "postinstall": "husky install && shx rm -rf .git/hooks && shx ln -s ../.husky .git/hooks"
   },
   "peerDependencies": {
@@ -89,6 +90,7 @@
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.30.0",
+    "semantic-release": "^17.4.4",
     "shx": "^0.3.3",
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.2",
